@@ -20,9 +20,11 @@ class AddTodoForm extends Component {
       <section>
         <form onSubmit={this.submitForm}>
           <input
+            required
             value={this.state.todo}
             placeholder="Add A Todo"
-            onChange={this.handleChange} />
+            onChange={this.handleChange} 
+          />
           <button>Add Todo</button>
         </form>
       </section>
